@@ -11,7 +11,12 @@
 
 ### Question 1
 
-```
+```bash
 django-admin startproject cc
 cd cc/
 python manage.py startapp collec_management
+python manage.py runserver 0.0.0.0:8000
+```
+Accès au serveur sur **le port 8088**
+
+
