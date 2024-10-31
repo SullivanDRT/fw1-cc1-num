@@ -11,4 +11,5 @@ urlpatterns = [
         views.comfirmation_suppression_collec,
         name="comfirmation_suppression_collec",
     ),
+    path("change/<int:collec_id>", views.modifier_collec, name="modifier_collec"),
 ]

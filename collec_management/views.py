@@ -54,3 +54,21 @@ def comfirmation_suppression_collec(request, collec_id):
             "collec_management/comfirmation_suppression_collec.html",
             {"collec": collec},
         )
+
+
+def modifier_collec(request, collec_id):
+    try:
+        collec = Collec.objects.get(pk=collec_id)
+    except Collec.DoesNotExist:
+        raise Http404("la collection n'existe pas")
+    if request.method == "POST":
+        updated_collec = CollecForm(request.POST, instance=collec)
+        updated_collec.save()
+        return HttpResponseRedirect("/about")
+    else:
+        form = CollecForm(instance=collec)
+        return render(
+            request,
+            "collec_management/modifier_collec.html",
+            {"form": form, "collec": collec},
+        )
