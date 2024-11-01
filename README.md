@@ -19,4 +19,10 @@ python manage.py runserver 0.0.0.0:8000
 ```
 Accès au serveur sur **le port 8088**
 
+### Question 3
 
+```bash
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver 0.0.0.0:8000
+```
