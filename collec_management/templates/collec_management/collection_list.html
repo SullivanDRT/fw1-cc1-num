@@ -21,6 +21,8 @@
             <td>{{ collection.title }}</td>
             <td>{{ collection.date }}</td>
             <td><a href="{% url 'collec_details' collection.id %}">Voir</a></td>
+            <td><a href="{% url 'modifier_collec' collection.id %}">Modifier</a></td>
+            <td><a href="{% url 'supprimmer_collec' collection.id %}">Supprimmer</a></td>
         </tr>
         {% endfor %}
     </tbody>
