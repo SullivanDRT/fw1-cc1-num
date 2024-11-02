@@ -3,6 +3,11 @@ from django.http import Http404
 from .models import Collec
 
 # Create your views here.
+from .models import Collec
+
+def collection_list(request):
+    collections = Collec.objects.all()  
+    return render(request, 'collec_management/collection_list.html', {'collections': collections})
 
 
 def about(request):
