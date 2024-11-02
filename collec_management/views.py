@@ -1,11 +1,15 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Collec
 from .forms import CollecForm
 from django.utils import timezone
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 
-
 # Create your views here.
+from .models import Collec
+
+def collection_list(request):
+    collections = Collec.objects.all()  
+    return render(request, 'collec_management/collection_list.html', {'collections': collections})
 
 
 def about(request):
@@ -56,6 +60,7 @@ def comfirmation_suppression_collec(request, collec_id):
         )
 
 
+
 def modifier_collec(request, collec_id):
     try:
         collec = Collec.objects.get(pk=collec_id)
@@ -72,3 +77,9 @@ def modifier_collec(request, collec_id):
             "collec_management/modifier_collec.html",
             {"form": form, "collec": collec},
         )
+
+def collec_details(request, id_collec):
+    collection = get_object_or_404(Collec ,id=id_collec)
+    context = {'collection' : collection}
+    return render(request, 'collec_management/collec_details.html', context)
+

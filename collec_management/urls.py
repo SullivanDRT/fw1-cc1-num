@@ -12,4 +12,7 @@ urlpatterns = [
         name="comfirmation_suppression_collec",
     ),
     path("change/<int:collec_id>", views.modifier_collec, name="modifier_collec"),
+    path('', views.collection_list, name='home'),
+    path('all/', views.collection_list, name='collection_list'),
+    path('collection/<int:id_collec>/', views.collec_details, name = 'collec_details'),
 ]

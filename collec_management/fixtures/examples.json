@@ -1,0 +1,110 @@
+[
+    {
+        "model": "collec_management.collec",
+        "pk": 1,
+        "fields": {
+            "title": "Collection de parfums",
+            "description": "Parfums de niche",
+            "date": "2024-01-01"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 2,
+        "fields": {
+            "title": "Collection de livres",
+            "description": "Littérature française",
+            "date": "2024-02-02"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 3,
+        "fields": {
+            "title": "Collection de voitures",
+            "description": "Voitures de collection vintage des années 90",
+            "date": "2024-03-03"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 4,
+        "fields": {
+            "title": "Collection de billets",
+            "description": "Billets de pays étrangers",
+            "date": "2024-04-04"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 5,
+        "fields": {
+            "title": "Collection de cartes Pokémon",
+            "description": "Cartes Pokémon rares",
+            "date": "2024-05-05"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 6,
+        "fields": {
+            "title": "Collection de timbres",
+            "description": "Timbres allemands datant de la 2nde Guerre Mondiale",
+            "date": "2024-06-06"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 7,
+        "fields": {
+            "title": "Collection de cristaux",
+            "description": "Pierres rares en provenance de Sardaigne",
+            "date": "2024-07-07"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 8,
+        "fields": {
+            "title": "Collection de montres",
+            "description": "Montres vintage de différentes marques",
+            "date": "2024-08-08"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 9,
+        "fields": {
+            "title": "Collection de vins",
+            "description": "Vins provenant de différents terroirs",
+            "date": "2024-09-09"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 10,
+        "fields": {
+            "title": "Collection de bougies",
+            "description": "Bougies de formes diverses et variées",
+            "date": "2024-10-10"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 11,
+        "fields": {
+            "title": "Collection de sneakers",
+            "description": "Sneakers disponibles en seulement quelques exemplaires dans le monde",
+            "date": "2024-11-11"
+        }
+    },
+    {
+        "model": "collec_management.collec",
+        "pk": 12,
+        "fields": {
+            "title": "Collection de poupées russes",
+            "description": "Poupées russes en porcelaine",
+            "date": "2024-12-12"
+        }
+    }
+]
