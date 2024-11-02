@@ -39,7 +39,7 @@ def supprimmer_collec(request, collec_id):
         except Collec.DoesNotExist:
             raise Http404("la collection n'existe pas")
         collec.delete()
-        return HttpResponseRedirect("/about")
+        return HttpResponseRedirect("/all")
     else:
         return HttpResponseRedirect(f"/delete_comfirm/{collec_id}")
 
@@ -51,7 +51,7 @@ def comfirmation_suppression_collec(request, collec_id):
         raise Http404("la collection n'existe pas")
     if request.method == "POST":
         collec.delete()
-        return HttpResponseRedirect("/about")
+        return HttpResponseRedirect("/all")
     else:
         return render(
             request,
@@ -69,7 +69,7 @@ def modifier_collec(request, collec_id):
     if request.method == "POST":
         updated_collec = CollecForm(request.POST, instance=collec)
         updated_collec.save()
-        return HttpResponseRedirect("/about")
+        return HttpResponseRedirect("/all")
     else:
         form = CollecForm(instance=collec)
         return render(
