@@ -46,13 +46,3 @@ from collec_management.models import Collec
 collections = Collec.objects.all()
 print(collections)
 ```
-### Question 6
-
-- Ajout de la vue `collection_list` dans `views.py`
-- Création du template `collection_list.html`
-- Ajout de la route dans `urls.py`
-
-### Question 10
-
-- Création du template de base `base.html`
-- Modification du template `collection_list.html` pour hériter de `base.html`
