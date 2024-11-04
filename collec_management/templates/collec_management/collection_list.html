@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste collections</title>
-</head>
-<body>
-    <h1>Liste des Collections</h1>
+{% extends "collec_management/main.html" %}
+{% block title %} Collections {% endblock %}
+{% block content %}
+<h1>Liste des Collections</h1>
 <table class="table">
     <thead>
         <tr>
@@ -27,5 +22,4 @@
         {% endfor %}
     </tbody>
 </table>
-</body>
-</html>
+{% endblock %}
