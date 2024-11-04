@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Détails Collection {{ collection.title }}</title>
-</head>
-<body>
-    <div>
-        <h1>{{ collection.title }}</h1>
-        <p>Description : {{ collection.description }}</p>
-        <p> Date : {{ collection.date }}</p>
-    </div>
-</body>
-</html>
+{% extends "collec_management/main.html" %}
+{% block title %} {{ collection.title }} {% endblock %}
+{% block content %}
+<div>
+    <h1>{{ collection.title }}</h1>
+    <p>Description : {{ collection.description }}</p>
+    <p> Date : {{ collection.date }}</p>
+</div>
+{% endblock %}

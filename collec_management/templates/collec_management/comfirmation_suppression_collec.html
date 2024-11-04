@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supprimmer Collection</title>
-</head>
-
-<body>
-    <form action="{% url 'comfirmation_suppression_collec' collec.id %}" method="post">
-        {% csrf_token %}
-        <fieldset>
-            <legend>Etes vous sure de vouloir supprimmer la collection "{{collec.title}}" ?</legend>
-            <input type="submit" value="Supprimmer">
-        </fieldset>
-    </form>
-
-</body>
-
-</html>
+{% extends "collec_management/main.html" %}
+{% block title %} Suppression de {{collec.title}} {% endblock %}
+{% block content %}
+<form action="{% url 'comfirmation_suppression_collec' collec.id %}" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend>Etes vous sure de vouloir supprimmer la collection "{{collec.title}}" ?</legend>
+        <input type="submit" value="Supprimmer">
+    </fieldset>
+</form>
+{% endblock %}

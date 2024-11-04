@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'collection_list' %}">Voir les collections</a></li>
+            <li><a href="{% url 'ajouter_collec' %}">Ajouter une collection</a></li>
+        </ul>
+    </nav>
+    {%block content%}
+    {% endblock %}
+</body>
+
+</html>
